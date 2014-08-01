@@ -20,3 +20,6 @@ vhcreator.sh <domain.com>
 The setup.sh script checks if the directory /etc/httpd/vhost.d and if it does not find it will create the directory.
 Then it will copy the template to "/etc/httpd/vhost.d" and copy the vhcreator.sh to /usr/bin/. 
 finally it appends the directive "include vhost.d/*conf" to the httpd.conf file.
+
+
+
