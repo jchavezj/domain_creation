@@ -10,4 +10,8 @@ git clone https://github.com/jchavezj/domain_creation.git
 cd domain_creation
 bash setup.sh
 
+To use the script just run as root:
+
+vhcreator.sh <domain.com>
+
 ===========================================================================
