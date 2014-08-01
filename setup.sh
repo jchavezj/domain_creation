@@ -4,7 +4,7 @@ dir="/etc/httpd/vhost.d"
 loc=$(pwd)
 template="$loc/template"
 conf="$loc/vhcreator.sh"
-inc="vhost.d/*.conf"
+inc="include vhost.d/*conf"
 
 if [ -d $dir  ];
 then
