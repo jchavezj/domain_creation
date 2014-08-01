@@ -1,7 +1,6 @@
 <VirtualHost *:80>  
   DocumentRoot "/var/www/vhosts/%%DOMAIN%%"
   ServerName %%DOMAIN%%
-  ServerAlias %%DOMAIN%%
    <Directory "/var/www/vhosts/%%DOMAIN%%">
     allow from all
     Options -Indexes
