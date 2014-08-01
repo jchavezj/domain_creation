@@ -1,14 +1,29 @@
 #!/bin/bash
 #
 ############################################################################
-# vhcreator => Virtual Host Creator                                        #               
-# <author> Johnny Chavez </author>        #  
-# <date>2014-07-29</date>				 #
-# V. 0.1								                                   #
+#     This file is part of apache_vhost script.				   #
+# 									   #
+#    Apache_vhsot is free software: you can redistribute it and/or modify  #
+#    it under the terms of the GNU General Public License as published by  #
+#    the Free Software Foundation, either version 3 of the License, or     #
+#    (at your option) any later version.				   #
+# 									   #
+#    apache_vhost is distributed in the hope that it will be useful,       #
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of        #
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         #
+#    GNU General Public License for more details.			   #
+# 									   # 
+#    You should have received a copy of the GNU General Public License     #
+#    along with apache_vhost.  If not, see <http://www.gnu.org/licenses/>. #
+#									   #
+#  									   #
+# <author> Johnny Chavez </author>            				   #
+# <date>2014-07-29</date>						   #
+# V. 0.1								   #
 ############################################################################
 
 ############################################################################
-#		 CONFIGURATION AREA   				                               #
+#		 CONFIGURATION AREA   				           #
 ############################################################################
 
 # Define the location of the  vHost Template
@@ -37,7 +52,7 @@ die () {
 
 echo " "
 
-[ "$#" -eq 1 ] || die  " Enter the name of the domain for example:
+[ "$#" -eq 1 ] || die  " Enter the name of the domain for example: 
 
  ./apache_vhost.sh www.example.com
  "
@@ -57,7 +72,7 @@ chmod 775 $vhostdir/$1
 touch $vhostdir/$1/index.html
 chown root:users $vhostdir/$1/index.html
 chmod 774 $vhostdir/$1/index.html
-echo "$1 website " >  $vhostdir/$1/index.html
+echo "$1 website " >  $vhostdir/$1/index.html 
 
 # Create empty log files for apache
 mkdir $logdir/$1
