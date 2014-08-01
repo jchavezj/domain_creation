@@ -1,5 +1,7 @@
 domain_creation
 ===============
 
-This creates a domain on RHEL/CentOS with Apache
+This is a simple script that creates a domain on RHEL/CentOS running Apache
+
+
 
