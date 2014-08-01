@@ -4,6 +4,7 @@ dir="/etc/httpd/vhost.d"
 loc=$(pwd)
 template="$loc/template"
 conf="$loc/vhcreator.sh"
+inc="vhost.d/*.conf"
 
 if [ -d $dir  ];
 then
@@ -16,5 +17,6 @@ else
 	echo "template has been copied to $dir"
 	cp $conf /usr/bin/
 	echo "The $conf has been copied"
+	echo $inc >>/etc/httpd/conf/httpd.conf
 	echo "Installation complete"	
 fi
