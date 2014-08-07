@@ -5,6 +5,7 @@ loc=$(pwd)
 template="$loc/template"
 conf="$loc/vhcreator.sh"
 inc="include vhost.d/*conf"
+dom="/var/www/vhost"
 
 if [ -d $dir  ];
 then
@@ -12,6 +13,7 @@ then
 else
     echo "Creating directory $dir"
 	mkdir -p $dir
+	mkdir $dom
     	echo "Directory $dir" created
 	cp $template $dir
 	echo "template has been copied to $dir"
