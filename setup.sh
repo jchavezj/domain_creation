@@ -5,7 +5,7 @@ loc=$(pwd)
 template="$loc/template"
 conf="$loc/vhcreator.sh"
 inc="include vhost.d/*conf"
-dom="/var/www/vhost"
+dom="/var/www/vhosts"
 
 if [ -d $dir  ];
 then
