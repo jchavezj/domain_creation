@@ -13,8 +13,9 @@ then
 else
     echo "Creating directory $dir"
 	mkdir -p $dir
+	echo "Directory $dir" created
 	mkdir $dom
-    	echo "Directory $dir" created
+    	echo "Directory $dom" created
 	cp $template $dir
 	echo "template has been copied to $dir"
 	cp $conf /usr/bin/
