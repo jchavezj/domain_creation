@@ -79,3 +79,35 @@ echo "The domain  $1 has been created."
 echo "You can place your files in $vhostdir/$1"
 echo "You can view your logs in $logdir/$1"
 echo " "
+
+
+###########################################################################
+#       This creates the ftp user for the domain                          #
+###########################################################################
+#
+if [ $(id -u) -eq 0 ]; then
+
+PASS=$(openssl rand 12 -base64)
+
+echo "Please enter FTP user for this domain: "
+read ftpuser
+
+egrep "^$ftpuser" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+echo "$ftpuser exists!"
+exit 1
+else
+
+useradd -d /var/www/vhosts/$1/ -s /sbin/nologin  $ftpuser
+#/usr/sbin/usermod -p echo $PASS | passwd  $ftpuser --stdin
+echo $PASS |passwd $ftpuser --stdin
+#
+chown -R $ftpuser:$ftpuser /var/www/vhosts/$1/
+echo " "
+echo "The user $name has been created with the following: "
+echo " The home directory is $vhostdir/$1"
+echo " username: $ftpuser"
+echo " password: $PASS"
+echo " "
+fi
+fi
