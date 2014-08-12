@@ -1,0 +1,28 @@
+[33m493a67c ([1;36mHEAD[m[33m, [1;31morigin/master[m[33m, [1;31morigin/HEAD[m[33m, [1;32mmaster[m[33m)[m Changelog
+[33mdabf56f[m added the ability to create the ftp user
+[33m11ea470[m Update setup.sh
+[33m87bb88f[m Update setup.sh
+[33m9c21502[m created docroot
+[33m2cb5fe0[m Update README
+[33mcef2ac8[m Update README
+[33m9c1fb3c[m Update README
+[33m5844d6d[m Update README
+[33m304c598[m Update README
+[33me259ff8[m Delete README.md
+[33m96cfd96[m Create README
+[33m2bf5e43[m Update README.md
+[33m8bb25d6[m install instructions
+[33m0277b29[m modified ServerAlias
+[33mad18afe[m corrected include
+[33m1198eab[m appends vhost.d/*conf to the httpd.conf
+[33ma96bb0a[m Update README.md
+[33m3b75239[m Update README.md
+[33m21b9f05[m Update README.md
+[33mc015ade[m creating setup script
+[33m60a8c74[m add the template file
+[33m00fd127[m removed the GLP within the script
+[33mcd22764[m fixes spaces
+[33mc97c097[m Update vhcreator.sh
+[33ma412d8c[m Update vhcreator.sh
+[33mbddfc6c[m Create vhcreator.sh
+[33mbca77d0[m Initial commit
