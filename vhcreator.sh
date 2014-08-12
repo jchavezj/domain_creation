@@ -4,7 +4,11 @@
 #     This file is part of vhcreator.sh script.				   #
   									   #
 # <author> Johnny Chavez </author>            				   #
+<<<<<<< HEAD
 # <date>created on 2014-07-29</date>					   #
+=======
+# <date>2014-07-29</date>						   #
+>>>>>>> FETCH_HEAD
 # V. 0.1.1								   #
 ############################################################################
 
@@ -103,7 +107,7 @@ echo $PASS |passwd $ftpuser --stdin
 #
 chown -R $ftpuser:$ftpuser /var/www/vhosts/$1/
 echo " "
-echo "The user $name has been created with the following: "
+echo "The user $ftpuser has been created with the following: "
 echo " The home directory is $vhostdir/$1"
 echo " username: $ftpuser"
 echo " password: $PASS"
