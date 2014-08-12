@@ -99,7 +99,6 @@ exit 1
 else
 
 useradd -d /var/www/vhosts/$1/ -s /sbin/nologin  $ftpuser
-#/usr/sbin/usermod -p echo $PASS | passwd  $ftpuser --stdin
 echo $PASS |passwd $ftpuser --stdin
 #
 chown -R $ftpuser:$ftpuser /var/www/vhosts/$1/
