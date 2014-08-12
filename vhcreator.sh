@@ -103,7 +103,7 @@ echo $PASS |passwd $ftpuser --stdin
 #
 chown -R $ftpuser:$ftpuser /var/www/vhosts/$1/
 echo " "
-echo "The user $name has been created with the following: "
+echo "The user $ftpuser has been created with the following: "
 echo " The home directory is $vhostdir/$1"
 echo " username: $ftpuser"
 echo " password: $PASS"
