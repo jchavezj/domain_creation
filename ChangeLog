@@ -1,4 +1,16 @@
-[33m493a67c ([1;36mHEAD[m[33m, [1;31morigin/master[m[33m, [1;31morigin/HEAD[m[33m, [1;32mmaster[m[33m)[m Changelog
+[33ma1760ea ([1;36mHEAD[m[33m, [1;31morigin/master[m[33m, [1;31morigin/HEAD[m[33m, [1;32mmaster[m[33m)[m removed tag
+[33m4828eac[m ServerAlias
+[33ma742e79[m Merge branch 'master' of https://github.com/jchavezj/domain_creation
+[33ma8678fa[m updated version
+[33meed5671[m Update vhcreator.sh
+[33mf02f50d[m Update vhcreator.sh
+[33ma6aac8f[m Update README
+[33mcb2226b[m Update vhcreator.sh
+[33m25cc21c[m Merge branch 'master' of https://github.com/jchavezj/domain_creation
+[33m29e380b[m created change log
+[33mc1e6ecc[m Delete changelog.md
+[33mc52f89f[m Update changelog.md
+[33m493a67c[m Changelog
 [33mdabf56f[m added the ability to create the ftp user
 [33m11ea470[m Update setup.sh
 [33m87bb88f[m Update setup.sh
