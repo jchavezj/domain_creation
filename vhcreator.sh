@@ -17,7 +17,7 @@
 ############################################################################
 
 # Define the location of the  vHost Template
-template="/etc/httpd/conf.d/template"
+template="/etc/httpd/vhost.d/template"
 
 # Define the location where apache looks for vhost configs
 confdir="/etc/httpd/vhost.d"
@@ -42,9 +42,9 @@ die () {
 
 echo " "
 
-[ "$#" -eq 1 ] || die  " Enter the name of the domain for example: 
+[ "$#" -eq 1 ] || die  " Enter the name of the domain without the www: 
 
- ./apache_vhost.sh www.example.com
+  vhcreator.sh example.com
  "
 
 
